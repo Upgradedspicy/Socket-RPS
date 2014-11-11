@@ -22,4 +22,4 @@ Then write a regex that will ask for a `/.*\/public\/.*/` and attempt to send th
 isn't trying to go crazy with file directory structure (eg /../)
 
 That being said, its cute and simple.
-Once I get windows 8.1 I can add it Realsense to it which may be interesting
+Once I get windows 8.1 I can add it Realsense to in which may be interesting
