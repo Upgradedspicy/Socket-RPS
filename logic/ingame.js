@@ -49,7 +49,7 @@ module.exports = function(socket,data){
       setTimeout(function(){
         match.state = "ready";
         if(typeof match.move[user] == "undefined")
-          require(__dirname+"exit")(uob.socket);
+          require(__dirname+"/exit")(uob.socket);
         else{
           var ret = {cmd:"results",you:match.move[user],opp:match.move[not_user]}
           uob.socket.emit("ingame", ret);
