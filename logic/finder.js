@@ -15,8 +15,10 @@ module.exports = function(socket, data){
       return socket.emit("finder", data);
     }
     if(data.cmd == "info"){
-      if(data.lagtime > 100)
-        return socket.emit("quit")
+      if(data.lagtime > 200){
+        require(__dirname+"/exit")(socket);
+        return socket.emit("exit")
+      }
       db.users[socket.id].offset = data.offset;
       db.users[socket.id].lagtime = data.lagtime;
     }
