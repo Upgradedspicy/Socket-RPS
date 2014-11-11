@@ -18,7 +18,7 @@ Whats nice in this little project is...
 
 Considering Consolodating everything into "logic" or perhaps calling it "apps" 
 In this manner, I wouldn't have 1 public folder but have a public in each of the apps
-Then write a regex that will ask for a /.*\/public\/.* and attempt to send the file so long as the person
+Then write a regex that will ask for a `/.*\/public\/.*/` and attempt to send the file so long as the person
 isn't trying to go crazy with file directory structure (eg /../)
 
 That being said, its cute and simple.
