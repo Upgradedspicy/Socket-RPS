@@ -15,7 +15,7 @@ module.exports = function(socket, data){
       return socket.emit("finder", data);
     }
     if(data.cmd == "info"){
-      if(data.lagtime > 200){
+      if(data.lagtime > 500){
         require(__dirname+"/exit")(socket);
         return socket.emit("exit")
       }
