@@ -4,6 +4,7 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 var fs = require("fs");
+var os = require("os");
 
 app.use(express.static(__root + '/public'));
 app.get(/^\/?bc\/.*/,require(__root+"/framework/bower_static.js"));
@@ -47,4 +48,4 @@ io.on('connection', function(socket){
 });
 server.listen(3000);
 
-console.log('Server running at http://127.0.0.1:3000/');
+console.log('Server running at http://'+os.hostname()+':'+3000);
