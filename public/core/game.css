@@ -1,0 +1,15 @@
+#gd{
+  width:640px;
+  height:480px;
+  display:inline-block;
+  position:relative;
+}
+#game{ /* our game */
+  position:absolute;
+  text-align:center;
+  width:100%;
+  height:100%;
+}
+
+.scene.hidden {display:none;}
+.scene.shown {display:block;}

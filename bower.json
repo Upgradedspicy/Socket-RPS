@@ -1,0 +1,23 @@
+{
+  "name": "rps",
+  "main": "public/general/init.js",
+  "version": "1.0.0",
+  "authors": [
+    "formula1"
+  ],
+  "description": "Rock Paper Scissors",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "es6-promise": "~2.0.0",
+    "jquery": "~2.1.1",
+    "eventEmitter": "~4.2.9"
+  }
+}

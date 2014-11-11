@@ -1,0 +1,19 @@
+{
+  "name": "rps",
+  "version": "1.0.0",
+  "description": "Simple rock paper scissors",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.10.1",
+    "mime": "^1.2.11",
+    "node-mime-master": "^1.2.11",
+    "socket.io": "^1.2.0",
+    "promise": "~6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
