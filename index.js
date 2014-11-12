@@ -28,7 +28,6 @@ var files = fs.readdirSync(__root +"/logic/");
 function setupSocketRoute(socket,name){
   var smaller = name.substring(0,name.length-3);
   socket.on(smaller,function(msg){
-    console.log("hit: "+smaller)
     require(__root+"/logic/"+name)(socket,msg);
   });
 }
@@ -38,7 +37,6 @@ io.on('connection', function(socket){
   for(var i=0;i<files.length;i++)
     setupSocketRoute(socket,files[i]);
   socket.on('chat message', function(msg){
-    console.log("message");
     io.emit('chat message', msg);
   });
   socket.on('disconnect', function(){

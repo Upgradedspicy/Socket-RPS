@@ -18,7 +18,7 @@ function title_scene(game){
         return game.setScene("finder_scene");
       }
       game.setScene("title_scene");
-      game.currentScene.elem.find(".reason").text(JSON.stringify(data));
+      game.currentScene.elem.find(".reason").text(data);
     });
     game.exit = function(reason){
       game.socket.emit("exit");

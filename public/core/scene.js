@@ -34,8 +34,9 @@ Scene.prototype.listen = function(fn,name){
 
 Scene.prototype.close = function(){
 	this.emitEvent("close", this);
-	if(this.game._cs)
-		this.socket.removeListener(this._csname, this._cs);
+	console.log("closing");
+	if(this._cs)
+		this.game.socket.removeListener(this._csname, this._cs);
 	delete this._cs;
 	delete this._csname;
 	this.elem.remove();
